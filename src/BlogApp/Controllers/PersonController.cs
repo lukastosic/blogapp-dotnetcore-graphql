@@ -1,10 +1,7 @@
-﻿using System;
+﻿using BlogApp.Contracts;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using BlogApp.Contracts;
-using BlogApp.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.Controllers
 {
@@ -18,7 +15,7 @@ namespace BlogApp.Controllers
         {
             this.personRepository = personRepository;
         }
-        
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()

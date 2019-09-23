@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlogApp.Entities
 {
@@ -11,7 +9,7 @@ namespace BlogApp.Entities
         {
             dbContext.Database.EnsureCreated();
 
-            // Look for any students.
+            // Look for any person.
             if (dbContext.People.Any())
             {
                 return;   // DB has been seeded

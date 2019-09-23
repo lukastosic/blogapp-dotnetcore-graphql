@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlogApp.Entities
 {
@@ -30,18 +27,6 @@ namespace BlogApp.Entities
 
         public DateTime CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
-
-        public List<Comment> Comments { get; set; }
-
-        public List<ArticleTag> ArticleTags { get; set; }
-
-        public List<ArticleFavorite> FavoritedBy { get; set; }
-
-        [NotMapped]
-        public List<string> TagList => (ArticleTags?.Select(x=>x.TagId) ?? Enumerable.Empty<string>()).ToList();
-
-        [NotMapped]
-        public int FavoritesCount => FavoritedBy?.Count ?? 0;
+        public DateTime UpdatedAt { get; set; }       
     }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlogApp.Entities
 {
@@ -24,18 +21,6 @@ namespace BlogApp.Entities
         public string Image { get; set;}
 
         public PersonRank Rank { get; set; }
-
-        public List<ArticleFavorite> ArticleFavorites { get; set; }
-
-        public List<FollowedPerson> Following { get; set; }
-
-        public List<FollowedPerson> Followers { get; set; }
-
-        public List<Article> Articles { get; set; }
-
-        public byte[] Hash { get; set; }
-
-        public byte[] Salt { get; set; }
 
     }
 }
