@@ -2,7 +2,7 @@
 
 This is (work in progress) blog application backend with GraphQL.
 
-Application is based on `Conduit` application, or better known as `RealWorld` example application - can be found on (https://github.com/gothinkster/realworld)[https://github.com/gothinkster/realworld]
+Application is based on `Conduit` application, or better known as `RealWorld` example application - can be found on [https://github.com/gothinkster/realworld](https://github.com/gothinkster/realworld)
 
 ## Database
 
