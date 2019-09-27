@@ -32,5 +32,10 @@ namespace BlogApp.Repository
         {
             return dbContext.Articles.Where(a => a.AuthorId.Equals(authorId)).ToList();
         }
+
+        public IEnumerable<Article> GetArticlesForAuthor(string authorEmail)
+        {
+            return dbContext.Articles.Include(a=>a.Author).Where(a => a.Author.Email.Equals(authorEmail)).ToList();
+        }
     }
 }

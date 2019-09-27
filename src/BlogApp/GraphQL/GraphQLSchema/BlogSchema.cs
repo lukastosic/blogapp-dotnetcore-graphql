@@ -9,7 +9,9 @@ namespace BlogApp.GraphQL.GraphQLSchema
         public BlogSchema(IDependencyResolver resolver)
         : base(resolver)
         {
-            Query = resolver.Resolve<PersonQuery>();
+            //Query = resolver.Resolve<PersonQuery>();
+            //Query = resolver.Resolve<ArticleQuery>();
+            Query = resolver.Resolve<BlogQueries>();
             Mutation = resolver.Resolve<PersonMutation>();
         }
     }

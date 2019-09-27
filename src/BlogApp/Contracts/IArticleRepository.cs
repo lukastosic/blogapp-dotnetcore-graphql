@@ -12,6 +12,8 @@ namespace BlogApp.Contracts
 
         IEnumerable<Article> GetArticlesForAuthor(Guid authorId);
 
+        IEnumerable<Article> GetArticlesForAuthor(string authorEmail);
+
         Task<ILookup<Guid, Article>> GetArticlesByAuthorIds(IEnumerable<Guid> authorIds);
     }
 }
